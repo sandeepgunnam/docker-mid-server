@@ -1,5 +1,5 @@
-FROM ubuntu:latest
-
+#FROM ubuntu:latest
+FROM rhel7:latest
 RUN mkdir -p /opt && \
     groupadd -g 999 mid && \
     useradd -r -u 999 -g mid mid
