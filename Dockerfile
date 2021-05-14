@@ -23,7 +23,7 @@ COPY docker/ ./docker
 COPY package*.json ./
 
 RUN npm install --no-optional && npm cache clean --force
-
+USER root
 COPY ./app.js .
 
 CMD node app.js
